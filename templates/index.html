@@ -19,7 +19,15 @@
 
 <p>{{ task.description }}</p>
 
-<a href="/delete/{{task.id}}">Excluir</a>
+<a href="/edit/{{task.id}}">Editar</a>
+
+|
+
+<a
+href="/delete/{{task.id}}"
+onclick="return confirm('Deseja realmente excluir esta tarefa?')">
+Excluir
+</a>
 
 <hr>
 

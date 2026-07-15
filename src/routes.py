@@ -8,6 +8,7 @@ def index():
     tasks = Task.query.all()
     return render_template("index.html", tasks=tasks)
 
+# Criar tasks
 @app.route("/create", methods=["GET", "POST"])
 def create():
 
@@ -28,6 +29,7 @@ def create():
 
     return render_template("create.html")
 
+# Deletar tasks
 @app.route("/delete/<int:id>")
 def delete(id):
 
@@ -37,3 +39,20 @@ def delete(id):
     db.session.commit()
 
     return redirect("/")
+
+# Editar tasks
+@app.route("/edit/<int:id>", methods=["GET", "POST"])
+def edit(id):
+
+    task = Task.query.get_or_404(id)
+
+    if request.method == "POST":
+
+        task.title = request.form["title"]
+        task.description = request.form["description"]
+
+        db.session.commit()
+
+        return redirect("/")
+
+    return render_template("edit.html", task=task)

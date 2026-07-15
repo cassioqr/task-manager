@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Editar tarefa</title>
+</head>
+
+<body>
+
+<h1>Editar tarefa</h1>
+
+<form method="POST">
+
+Título
+
+<input
+type="text"
+name="title"
+value="{{ task.title }}"
+required>
+
+<br><br>
+
+Descrição
+
+<textarea name="description">{{ task.description }}</textarea>
+
+<br><br>
+
+<button type="submit">
+Salvar Alterações
+</button>
+
+</form>
+
+</body>
+
+</html>
