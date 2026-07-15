@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Task Manager</title>
+</head>
+
+<body>
+
+<h1>Task Manager</h1>
+
+<a href="/create">Nova tarefa</a>
+
+<hr>
+
+{% for task in tasks %}
+
+<h3>{{ task.title }}</h3>
+
+<p>{{ task.description }}</p>
+
+<a href="/delete/{{task.id}}">Excluir</a>
+
+<hr>
+
+{% endfor %}
+
+</body>
+</html>
