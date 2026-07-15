@@ -130,9 +130,11 @@ python app.py
 
 ## 🔄 Mudança de Escopo
 
-Durante o desenvolvimento foi adicionada uma nova funcionalidade para permitir que as tarefas possuam prioridade (Baixa, Média e Alta).
+Durante o desenvolvimento do sistema, surgiu uma nova necessidade identificada pelo cliente: permitir a definição de prioridade para cada tarefa.
 
-Essa alteração foi realizada para melhorar a organização das atividades e representar uma mudança de escopo típica de projetos ágeis.
+A funcionalidade foi adicionada sem comprometer as funcionalidades existentes, demonstrando a flexibilidade proporcionada pelas metodologias ágeis.
+
+Com essa alteração, cada tarefa passou a possuir uma prioridade (Baixa, Média ou Alta), facilitando a organização e o planejamento das atividades da equipe.
 
 ---
 

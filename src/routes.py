@@ -17,9 +17,12 @@ def create():
         title = request.form["title"]
         description = request.form["description"]
 
+        priority = request.form["priority"]
+
         task = Task(
             title=title,
-            description=description
+            description=description,
+            priority=priority
         )
 
         db.session.add(task)
@@ -50,7 +53,8 @@ def edit(id):
 
         task.title = request.form["title"]
         task.description = request.form["description"]
-
+        task.priority = request.form["priority"]
+        
         db.session.commit()
 
         return redirect("/")
