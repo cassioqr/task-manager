@@ -80,12 +80,12 @@ task-manager/
 
 ---
 
-<!-- ## ▶ Como executar
+## ▶ Como executar
 
 Clone o repositório:
 
 ```bash
-git clone 
+git clone https://github.com/cassioqr/task-manager.git
 ```
 
 Entre na pasta:
@@ -126,7 +126,7 @@ Execute o sistema:
 python app.py
 ```
 
---- -->
+---
 
 ## 🔄 Mudança de Escopo
 
